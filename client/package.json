@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "client": "npm run dev",
+    "server": "cd server && npm run dev",
+    "start": "concurrently \"npm run client\" \"npm run server\" "
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
